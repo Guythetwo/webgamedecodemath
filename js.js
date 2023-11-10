@@ -1,0 +1,126 @@
+const button_start = document.getElementById("button_start")
+const text_start = document.getElementById("text_start")
+const main_ask = document.getElementById("main_ask")
+const ask = document.getElementById("ask")
+const Choose_Ans = document.getElementById("Choose_Ans")
+const Text_Ans1 = document.getElementById("Text_Ans1")
+const Text_Ans2 = document.getElementById("Text_Ans2")
+const score = document.getElementById("score")
+const img = document.getElementById("imgtrue_false")
+const number_ask = document.getElementById("number")
+
+var ask_number = 1
+var ask_score = 0
+var True_ask = 0
+
+function start_ask(text_ask, anstrue, ansfalse) {
+    if (button_start.style.display != "none") {
+        button_start.style.display = "none"
+        main_ask.style.display = "inline"
+        Choose_Ans.style.display = "inline"
+        text_start.innerHTML = "NEXT"
+        img.src = ""
+        ask.innerHTML = text_ask
+        number = Math.floor(Math.random() * (3 - 1) ) + 1;
+        number_ask.innerHTML = ask_number
+        if (number == 1) {
+            True_ask = 1
+            Text_Ans1.innerHTML = anstrue
+            Text_Ans2.innerHTML = ansfalse
+        } else {
+            True_ask = 2
+            Text_Ans2.innerHTML = anstrue
+            Text_Ans1.innerHTML = ansfalse
+        }
+    }
+}
+
+function restart() {
+    text_start.innerHTML = "START"
+    img.src = ""
+    ask_number = 1
+    ask_score = 0
+    score.innerHTML = ask_score
+}
+
+function next() {
+    if (ask_number == 1) {
+        start_ask("จงหาคำตอบ [(1+1+1)(2+3)(1+1)(2X10¹)+30+(10-3)]","Leg","Look")
+    } else if (ask_number == 2) {
+        start_ask("จงหาคำตอบ 5!+173+4!","Lie","Line")
+    } else if (ask_number == 3) {
+        start_ask("A={616,617,618} B={618,619,620} หาสมาชิกของ A∩B","Big","Sad")
+    } else if (ask_number == 4) {
+        start_ask("กำหนดให้ประพจน์ p เป็นเท็จ q เป็นจริง และ r เป็นจริง<br> ก. (q∧p)↔[(rv~p)→q] มีค่าความจริงเป็นจริง ถ้าประพจน์นี้ถูก = 14 ถ้าผิด = 20 <br>ข. [pv(~q→p)]∧r มีค่าความจริงเป็นเท็จ ถ้าประพจน์นี้ถูก = 20 ถ้าผิด = 14 <br>หาคำตอบ ก+ข","He","Lie")
+        ask.style.fontSize = "200%"
+    } else if (ask_number == 5) {
+        start_ask("339 < x < 337 หาค่า x","Bee","Fun")
+        ask.style.fontSize = "400%"
+    } else if (ask_number == 6) {
+        start_ask("จงหาค่าของ 1000-337","Egg","Bee")
+    } else if (ask_number == 7) {
+        start_ask("ลูกบอล 1 ลูก มีเส้นผ่านศูนย์กลางยาว 28 ซม. จงหารัศมีของลูกบอล","Hi","Ok")
+    } else if (ask_number == 8) {
+        start_ask("","oil","out")
+    } else if (ask_number == 9) {
+        start_ask("","she","son")
+    } else if (ask_number == 10) {
+        start_ask("","see","sir")
+        text_start.innerHTML = "REGAME"
+        text_start.style.fontSize = "400%"
+    } else {
+        restart()
+    }
+}
+
+function click1() {
+    if (True_ask == 1) {
+        ask_number += 1
+        ask_score += 1
+        console.log(ask_score)
+        button_start.style.display = "inline"
+        main_ask.style.display = "none"
+        Choose_Ans.style.display = "none"
+        img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
+        score.innerHTML = ask_score
+    } else {
+        ask_number += 1
+        if (ask_score == 0) {
+            ask_score += 0
+        } else {
+            ask_score -= 1
+        }
+        console.log(ask_score)
+        button_start.style.display = "inline"
+        main_ask.style.display = "none"
+        Choose_Ans.style.display = "none"
+        img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
+        score.innerHTML = ask_score
+    }
+}
+
+function click2() {
+    if (True_ask == 2) {
+        ask_number += 1
+        ask_score += 1
+        console.log(ask_score)
+        button_start.style.display = "inline"
+        main_ask.style.display = "none"
+        Choose_Ans.style.display = "none"
+        img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
+        score.innerHTML = ask_score
+    } else {
+        ask_number += 1
+        if (ask_score == 0) {
+            ask_score += 0
+        } else {
+            ask_score -= 1
+        }
+        console.log(ask_score)
+        button_start.style.display = "inline"
+        main_ask.style.display = "none"
+        Choose_Ans.style.display = "none"
+        img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
+        score.innerHTML = ask_score
+    }
+}
