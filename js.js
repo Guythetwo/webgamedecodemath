@@ -45,27 +45,27 @@ function restart() {
 
 function next() {
     if (ask_number == 1) {
-        start_ask("จงหาคำตอบ [(1+1+1)(2+3)(1+1)(2X10¹)+30+(10-3)]","Leg","Look")
+        start_ask("จงหาคำตอบ [(1+1+1)(2+3)(1+1)(2X10¹)+30+(10-3)]","LEG","LOOK")
     } else if (ask_number == 2) {
-        start_ask("จงหาคำตอบ 5!+173+4!","Lie","Line")
+        start_ask("จงหาคำตอบ 5!+173+4!","LIE","LINE")
     } else if (ask_number == 3) {
-        start_ask("A={616,617,618} B={618,619,620} หาสมาชิกของ A∩B","Big","Sad")
+        start_ask("A={616,617,618} B={618,619,620} หาสมาชิกของ A∩B","BIG","SAD")
     } else if (ask_number == 4) {
-        start_ask("กำหนดให้ประพจน์ p เป็นเท็จ q เป็นจริง และ r เป็นจริง<br> ก. (q∧p)↔[(rv~p)→q] มีค่าความจริงเป็นจริง ถ้าประพจน์นี้ถูก = 14 ถ้าผิด = 20 <br>ข. [pv(~q→p)]∧r มีค่าความจริงเป็นเท็จ ถ้าประพจน์นี้ถูก = 20 ถ้าผิด = 14 <br>หาคำตอบ ก+ข","He","Lie")
+        start_ask("กำหนดให้ประพจน์ p เป็นเท็จ q เป็นจริง และ r เป็นจริง<br> ก. (q∧p)↔[(rv~p)→q] มีค่าความจริงเป็นจริง ถ้าประพจน์นี้ถูก = 14 ถ้าผิด = 20 <br>ข. [pv(~q→p)]∧r มีค่าความจริงเป็นเท็จ ถ้าประพจน์นี้ถูก = 20 ถ้าผิด = 14 <br>หาคำตอบ ก+ข","HE","LIE")
         ask.style.fontSize = "200%"
     } else if (ask_number == 5) {
-        start_ask("339 < x < 337 หาค่า x","Bee","Fun")
+        start_ask("339 < x < 337 หาค่า x","BEE","FUN")
         ask.style.fontSize = "400%"
     } else if (ask_number == 6) {
-        start_ask("จงหาค่าของ 1000-337","Egg","Bee")
+        start_ask("จงหาค่าของ 1000-337","EGG","BEE")
     } else if (ask_number == 7) {
-        start_ask("ลูกบอล 1 ลูก มีเส้นผ่านศูนย์กลางยาว 28 ซม. จงหารัศมีของลูกบอล","Hi","Ok")
+        start_ask("ลูกบอล 1 ลูก มีเส้นผ่านศูนย์กลางยาว 28 ซม. จงหารัศมีของลูกบอล","HI","OK")
     } else if (ask_number == 8) {
-        start_ask("","oil","out")
+        start_ask("","OIL","OUT")
     } else if (ask_number == 9) {
-        start_ask("","she","son")
+        start_ask("","SHE","SON")
     } else if (ask_number == 10) {
-        start_ask("","see","sir")
+        start_ask("","SEE","SIR")
         text_start.innerHTML = "REGAME"
         text_start.style.fontSize = "400%"
     } else {
