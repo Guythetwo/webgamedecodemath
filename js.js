@@ -8,6 +8,7 @@ const Text_Ans2 = document.getElementById("Text_Ans2")
 const score = document.getElementById("score")
 const img = document.getElementById("imgtrue_false")
 const number_ask = document.getElementById("number")
+const number_img = document.getElementById("number_img")
 
 var ask_number = 1
 var ask_score = 0
@@ -23,6 +24,7 @@ function start_ask(text_ask, anstrue, ansfalse) {
         ask.innerHTML = text_ask
         number = Math.floor(Math.random() * (3 - 1) ) + 1;
         number_ask.innerHTML = ask_number
+        number_img.innerHTML = ask_number
         if (number == 1) {
             True_ask = 1
             Text_Ans1.innerHTML = anstrue
@@ -62,10 +64,17 @@ function next() {
         start_ask("ลูกบอล 1 ลูก มีเส้นผ่านศูนย์กลางยาว 28 ซม. จงหารัศมีของลูกบอล","HI","OK")
     } else if (ask_number == 8) {
         start_ask("","OIL","OUT")
+        img.src = "img/A.webp"
+        number_img.style.display = "inline"
     } else if (ask_number == 9) {
         start_ask("","SHE","SON")
+        img.src = "img/received_1699451127237795.webp"
+        number_img.style.display = "inline"
     } else if (ask_number == 10) {
         start_ask("","SEE","SIR")
+        img.src = "img/2.jpeg"
+        number_img.style.display = "inline"
+        img.style.width = "15%"
         text_start.innerHTML = "REGAME"
         text_start.style.fontSize = "400%"
     } else {
@@ -81,8 +90,10 @@ function click1() {
         button_start.style.display = "inline"
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
+        number_img.style.display = "none"
         img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
         score.innerHTML = ask_score
+        img.style.width = "30%"
     } else {
         ask_number += 1
         if (ask_score == 0) {
@@ -94,8 +105,10 @@ function click1() {
         button_start.style.display = "inline"
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
+        number_img.style.display = "none"
         img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
+        img.style.width = "30%"
     }
 }
 
@@ -107,8 +120,10 @@ function click2() {
         button_start.style.display = "inline"
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
+        number_img.style.display = "none"
         img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
         score.innerHTML = ask_score
+        img.style.width = "30%"
     } else {
         ask_number += 1
         if (ask_score == 0) {
@@ -120,7 +135,9 @@ function click2() {
         button_start.style.display = "inline"
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
+        number_img.style.display = "none"
         img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
+        img.style.width = "30%"
     }
 }
