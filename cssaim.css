@@ -10,6 +10,7 @@
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 5s linear infinite;
+    z-index: -3;
 }
 
 @keyframes rotation {
@@ -43,7 +44,6 @@
         content: '';
         position: absolute;
         background: rgb(255, 195, 92);
-        z-index: -1;
     }
     
     .cloud:after {
@@ -72,3 +72,9 @@
         transform: rotate(-30deg);
         z-index: -4;
     }
+
+@media (max-width: 600px) {
+    .cloud {
+        display: none;
+    }
+}

@@ -28,7 +28,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30%;
-
 }
 
 .number {
@@ -179,10 +178,20 @@ body {
 }
 
 @media (max-width: 600px) {
+    .main {
+        width: 350px;
+        top: 15px;
+        font-size: 350%;
+    }
+
     .Ans {
         width: 250px;
         margin: 10px;
         font-size: 100%;
+    }
+
+    .Ans_main {
+        top: 640px;
     }
 
     .icon_x {
@@ -194,16 +203,37 @@ body {
         }
     }
 
+    .main_ask {
+        position: absolute;
+        top: 40%;
+        left: 36%;
+    }
+
     .ask {
-        text-align: center;
-        margin-left: 5%;
+        width: 130%;
         font-size: 200%;
-        border: 10px solid rgb(255, 176, 40);
-        background-color: antiquewhite;
-        float: left;
     }
 
     .number {
-        font-size: 200%;
+        display: none;
+    }
+
+    .button_start {
+        width: 80%;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .score {
+        top: 90%;
+        right: 1%;
+        font-size: 45px;
+        width: 20%;
+    }
+
+    .number_img {
+        top: -1000px;
     }
   }

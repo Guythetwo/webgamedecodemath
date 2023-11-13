@@ -74,7 +74,6 @@ function next() {
         start_ask("","SEE","SIR")
         img.src = "img/2.jpeg"
         number_img.style.display = "inline"
-        img.style.width = "15%"
         text_start.innerHTML = "REGAME"
         text_start.style.fontSize = "400%"
     } else {
@@ -93,7 +92,6 @@ function click1() {
         number_img.style.display = "none"
         img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
         score.innerHTML = ask_score
-        img.style.width = "30%"
     } else {
         ask_number += 1
         console.log(ask_score)
@@ -103,7 +101,6 @@ function click1() {
         number_img.style.display = "none"
         img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
-        img.style.width = "30%"
     }
 }
 
