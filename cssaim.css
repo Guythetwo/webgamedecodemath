@@ -36,14 +36,14 @@
         -moz-border-radius: 100px;
         
         position: relative;
-        top: 18.5cm;;
+        top: 18.5cm;
     }
     
     .cloud:after, .cloud:before {
         content: '';
         position: absolute;
         background: rgb(255, 195, 92);
-        z-index: -1
+        z-index: -1;
     }
     
     .cloud:after {
@@ -61,4 +61,14 @@
         border-radius: 200px;
         -webkit-border-radius: 200px;
         -moz-border-radius: 200px;
+    }
+
+    .box {
+        position: absolute;
+        left: -150px;
+        background: rgb(255, 231, 189);
+        width:400px;
+        height: 1000px;
+        transform: rotate(-30deg);
+        z-index: -4;
     }

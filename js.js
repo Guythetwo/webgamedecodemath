@@ -96,11 +96,6 @@ function click1() {
         img.style.width = "30%"
     } else {
         ask_number += 1
-        if (ask_score == 0) {
-            ask_score += 0
-        } else {
-            ask_score -= 1
-        }
         console.log(ask_score)
         button_start.style.display = "inline"
         main_ask.style.display = "none"
@@ -126,11 +121,6 @@ function click2() {
         img.style.width = "30%"
     } else {
         ask_number += 1
-        if (ask_score == 0) {
-            ask_score += 0
-        } else {
-            ask_score -= 1
-        }
         console.log(ask_score)
         button_start.style.display = "inline"
         main_ask.style.display = "none"

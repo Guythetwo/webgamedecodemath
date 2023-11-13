@@ -83,6 +83,7 @@ body {
     font-size: 45px;
     text-align: center;
     width: 5%;
+    background-color: antiquewhite;
     border: 10px solid rgb(255, 176, 40);
 }
 
@@ -176,3 +177,33 @@ body {
 .Ans:hover .icon_x::after {
     display: inline;
 }
+
+@media (max-width: 600px) {
+    .Ans {
+        width: 250px;
+        margin: 10px;
+        font-size: 100%;
+    }
+
+    .icon_x {
+        height: 10px;
+        width: 10px;
+        &:after {
+            top: -10px;
+            font-size: 50px;
+        }
+    }
+
+    .ask {
+        text-align: center;
+        margin-left: 5%;
+        font-size: 200%;
+        border: 10px solid rgb(255, 176, 40);
+        background-color: antiquewhite;
+        float: left;
+    }
+
+    .number {
+        font-size: 200%;
+    }
+  }
