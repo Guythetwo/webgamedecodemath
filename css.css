@@ -1,6 +1,7 @@
 body {
     overflow-y: hidden;
-    overflow-x: hidden;    
+    overflow-x: hidden;
+    background-color: black;
 }
 
 .main {
@@ -12,7 +13,25 @@ body {
     width: 30%;
     font-size: 500%;
     border-radius: 3%;
-    border: 10px solid rgb(30, 202, 30);
+    color: #ffffff;
+    text-shadow:
+        0 0 10px #D15BFC,
+        0 0 21px #D15BFC,
+        0 0 42px #D15BFC,
+        0 0 82px #D15BFC,
+        0 0 92px #ffffff,
+        0 0 102px #ffffff,
+        0 0 151px #ffffff;
+
+    &::after {
+        content: ' MATH';
+        color: white;
+        background: linear-gradient(90deg, #4CFFF6 5%, #4CFFF6 15%, #4CFFF6 30%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 5px transparent;
+        color: #000;
+        text-shadow: 0px 0px black;
+    }
 }
 
 .main_ask {
@@ -25,7 +44,7 @@ body {
 
 .img {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 25%;
@@ -58,9 +77,14 @@ body {
     margin-top: 50px;
     font-size: 200%;
     width: 100%;
-    border: 10px solid rgb(255, 176, 40);
-    background-color: antiquewhite;
+    border: 5px solid #4CFFF6;
+    background-color: transparent;
     float: left;
+    color: #ffffff;
+    box-shadow:
+        0 0 10px #4CFFF6,
+        0 0 21px #4CFFF6,
+        0 0 42px #ffffff;
 }
 
 .arrow {
@@ -84,8 +108,8 @@ body {
     font-size: 45px;
     text-align: center;
     width: 5%;
-    background-color: antiquewhite;
-    border: 10px solid rgb(255, 176, 40);
+    border: 5px solid #4CFFF6;
+    color: #ffffff;
 }
 
 .button_start {
@@ -95,16 +119,22 @@ body {
     transform: translate(-50%, -50%);
     width: 20%;
     text-align: center;
-    background-color: antiquewhite;
-    border: 10px solid rgb(255, 176, 40);
+    background-color: transparent;
+    border: 5px solid #4CFFF6;
+    color: #ffffff;
     border-radius: 2%;
     transition-duration: 500ms;
     display: inline;
 }
 
 .button_start:hover {
-    background-color: rgb(234, 148, 0);
-    color: aliceblue;
+    background-color: #4CFFF6;
+    box-shadow:
+        0 0 10px #4CFFF6,
+        0 0 21px #4CFFF6,
+        0 0 42px #4CFFF6,
+        0 0 82px #ffffff;
+    color: rgb(255, 255, 255);
 }
 
 .button_start:hover .arrow {
@@ -120,7 +150,7 @@ body {
 .Ans_main {
     position: absolute;
     left: 25%;
-    top: 650px;
+    top: 620px;
     display: none;
 }
 
@@ -130,10 +160,11 @@ body {
     margin: 50px;
     font-size: 200%;
     border-radius: 5%;
-    background-color: antiquewhite;
-    border: 10px solid rgb(255, 176, 40);
+    background-color: transparent;
+    border: 5px solid #4CFFF6;
     float: left;
     transition-duration: 500ms;
+    color: #ffffff;
 }
 
 .icon_x {
@@ -168,7 +199,12 @@ body {
 }
 
 .Ans:hover {
-    background-color: rgb(234, 148, 0);
+    background-color: #4CFFF6;
+    box-shadow:
+        0 0 10px #4CFFF6,
+        0 0 21px #4CFFF6,
+        0 0 42px #4CFFF6,
+        0 0 82px #ffffff;
 }
 
 .Ans:hover .Ans_text {
@@ -184,7 +220,7 @@ body {
     .main {
         width: 300px;
         top: 15px;
-        font-size:250%;
+        font-size: 250%;
     }
 
     .Ans {
@@ -196,12 +232,13 @@ body {
     .Ans_main {
         top: 75%;
         left: 50%;
-        transform:  translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 
     .icon_x {
         height: 10px;
         width: 10px;
+
         &:after {
             top: -10px;
             font-size: 60px;
@@ -212,12 +249,12 @@ body {
         position: absolute;
         top: 35%;
         left: 35%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
 
     .ask {
         width: 140%;
-        font-size: 130%;
+        font-size: 120%;
     }
 
     .number {
@@ -230,7 +267,7 @@ body {
     }
 
     .img {
-        top: 350px;
+        top: 280px;
         width: 80%;
     }
 
@@ -253,4 +290,4 @@ body {
         top: 35px;
         border-width: 0 8px 8px 0;
     }
-  }
+}
