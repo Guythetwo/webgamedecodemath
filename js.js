@@ -88,7 +88,7 @@ function click1() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
-        img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
+        img.src = "img/tick-icon-sign-symbol-design-free-png.webp"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
@@ -100,7 +100,7 @@ function click1() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
-        img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
+        img.src = "img/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
@@ -117,7 +117,7 @@ function click2() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
-        img.src = "https://static.vecteezy.com/system/resources/thumbnails/010/156/510/small/tick-icon-sign-symbol-design-free-png.png"
+        img.src = "img/tick-icon-sign-symbol-design-free-png.webp"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
@@ -129,7 +129,7 @@ function click2() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
-        img.src = "https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/red_prodpictxmark_2_1484336301-1.png"
+        img.src = "img/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
