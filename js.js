@@ -20,7 +20,7 @@ function start_ask(text_ask, anstrue, ansfalse) {
         main_ask.style.display = "inline"
         Choose_Ans.style.display = "inline"
         text_start.innerHTML = "NEXT"
-        img.src = ""
+        img.style.display = "none"
         ask.innerHTML = text_ask
         number = Math.floor(Math.random() * (3 - 1) ) + 1;
         number_ask.innerHTML = ask_number
@@ -66,12 +66,14 @@ function next() {
     } else if (ask_number == 8) {
         start_ask("","OIL","OUT")
         img.src = "img/A.webp"
+        img.style.display = "inline"
     } else if (ask_number == 9) {
         start_ask("","SHE","SON")
         img.src = "img/received_1699451127237795.webp"
     } else if (ask_number == 10) {
         start_ask("","SEE","SIR")
         img.src = "img/2.jpeg"
+        img.style.display = "inline"
         text_start.innerHTML = "REGAME"
         text_start.style.fontSize = "400%"
     } else {
@@ -88,6 +90,7 @@ function click1() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
+        img.style.display = "inline"
         img.src = "img/tick-icon-sign-symbol-design-free-png.webp"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
@@ -100,6 +103,7 @@ function click1() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
+        img.style.display = "inline"
         img.src = "img/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
@@ -117,6 +121,7 @@ function click2() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
+        img.style.display = "inline"
         img.src = "img/tick-icon-sign-symbol-design-free-png.webp"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
@@ -129,6 +134,7 @@ function click2() {
         main_ask.style.display = "none"
         Choose_Ans.style.display = "none"
         number_img.style.display = "none"
+        img.style.display = "inline"
         img.src = "img/red_prodpictxmark_2_1484336301-1.png"
         score.innerHTML = ask_score
         if (Text_Ans1.style.fontSize > "32px") {
