@@ -224,14 +224,14 @@ body {
     }
 
     .Ans {
-        width: 250px;
+        width: 120%;
         margin: 10px;
         font-size: 100%;
     }
 
     .Ans_main {
         top: 75%;
-        left: 50%;
+        left: 45%;
         transform: translate(-50%, -50%);
     }
 
@@ -254,7 +254,7 @@ body {
 
     .ask {
         width: 140%;
-        font-size: 120%;
+        font-size: 110%;
     }
 
     .number {
@@ -272,9 +272,9 @@ body {
     }
 
     .score {
-        top: 90%;
+        top: 94%;
         right: 1%;
-        font-size: 45px;
+        font-size: 200%;
         width: 20%;
     }
 
