@@ -9,6 +9,7 @@ const score = document.getElementById("score")
 const img = document.getElementById("imgtrue_false")
 const number_ask = document.getElementById("number")
 const number_img = document.getElementById("number_img")
+const img1 = document.getElementById("img1")
 
 var ask_number = 1
 var ask_score = 0
@@ -70,6 +71,7 @@ function next() {
     } else if (ask_number == 9) {
         start_ask("","SHE","SON")
         img.src = "img/received_1699451127237795.webp"
+        img1.style.display = 'inline'
     } else if (ask_number == 10) {
         start_ask("","SEE","SIR")
         img.src = "img/2.jpeg"
@@ -96,6 +98,7 @@ function click1() {
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
         }
+        img1.style.display = 'none'
     } else {
         ask_number += 1
         console.log(ask_score)
@@ -109,6 +112,7 @@ function click1() {
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
         }
+        img1.style.display = 'none'
     }
 }
 
@@ -127,6 +131,7 @@ function click2() {
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
         }
+        img1.style.display = 'none'
     } else {
         ask_number += 1
         console.log(ask_score)
@@ -140,5 +145,6 @@ function click2() {
         if (Text_Ans1.style.fontSize > "32px") {
             img.style.width = "30%"
         }
+        img1.style.display = 'none'
     }
 }

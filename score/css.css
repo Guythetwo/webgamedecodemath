@@ -1,0 +1,98 @@
+.a {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: #D15BFC;
+    box-shadow:
+        0 0 10px #D15BFC,
+        0 0 21px #ffffff;
+    transition-duration: 500ms;
+}
+
+.b {
+    transform: rotate(90deg);
+}
+
+.packA {
+    position: relative;
+    top: 400px;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    float: left;
+    margin-left: 13%;
+}
+
+.button {
+    position: relative;
+    transition-duration: 500ms;
+    height: 140px;
+    width: 280px;
+    left: 855%;
+    top: 350px;
+    background-color: transparent;
+    border: 5px solid #4CFFF6;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.ro {
+    position: relative;
+    transform: rotate(0deg);
+    top: 0px;
+    transition-duration: 500ms;
+}
+
+.hidden {
+    width: 5%;
+    height: 100px;
+}
+
+.hidden:active .button {
+    background-color: #4CFFF6;
+    box-shadow:
+        0 0 10px #4CFFF6,
+        0 0 21px #4CFFF6,
+        0 0 42px #4CFFF6,
+        0 0 82px #ffffff;
+}
+
+.hidden:hover .icon {
+    animation: 500ms ease-in 0s infinite reverse both running runro;
+}
+
+@keyframes runro {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 900px) {
+    .button {
+        display: none;
+    }
+
+    .packA {
+        position: absolute;
+        transform: rotate(90deg);
+    }
+
+    #filp1 {
+        top: -130px;
+        left: 32%;
+    }
+
+    #filp2 {
+        top: 170px;
+        left: 32%;
+    }
+
+    #filp3 {
+        top: 470px;
+        left: 32%;
+    }
+
+}

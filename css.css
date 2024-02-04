@@ -1,7 +1,10 @@
 body {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.truemain {
+    display: inline;
 }
 
 .main {
@@ -133,6 +136,11 @@ body {
     -webkit-transform: rotate(-45deg);
 }
 
+.button_start:active {
+    background-color: transparent;
+    box-shadow: transparent;
+}
+
 .Ans_main {
     position: absolute;
     left: 25%;
@@ -193,6 +201,12 @@ body {
         0 0 82px #ffffff;
 }
 
+.Ans:active {
+    background-color: transparent;
+    box-shadow: transparent;
+}
+
+
 .Ans:hover .Ans_text {
     transform: translateX(-65%);
     color: aliceblue;
@@ -200,6 +214,10 @@ body {
 
 .Ans:hover .icon_x::after {
     display: inline;
+}
+
+.main_score {
+    display: none;
 }
 
 @media (max-width: 1300px) {
