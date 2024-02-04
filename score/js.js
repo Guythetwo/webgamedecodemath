@@ -32,3 +32,8 @@ function filp_box() {
     ro.style.top = ''
   }
 }
+
+const oppositeOrientation = screen.orientation.type.startsWith("portrait")
+  ? "landscape"
+  : "portrait";
+screen.orientation.lock(oppositeOrientation)
