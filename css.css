@@ -235,7 +235,7 @@ body {
 
     .Ans_main {
         top: 80%;
-        left: 50%;
+        left: 75%;
         width: 20%;
         transform: translate(-50%, -50%);
     }
@@ -303,16 +303,16 @@ body {
         font-size: 250%;
     }
 
-    .Ans {
-        width: 200%;
-        margin: 10px;
-        font-size: 100%;
-    }
-
     .Ans_main {
         top: 75%;
-        left: 40%;
+        left: 58%;
         transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .Ans {
+        width: 170px;
+        font-size: 90%;
     }
 
     .icon_x {
