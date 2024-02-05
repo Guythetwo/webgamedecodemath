@@ -143,7 +143,7 @@ body {
 
 .Ans_main {
     position: absolute;
-    left: 25%;
+    left: 24%;
     top: 620px;
     display: none;
 }
@@ -305,14 +305,16 @@ body {
 
     .Ans_main {
         top: 75%;
-        left: 58%;
-        transform: translate(-50%, -50%);
+        left: 50%;
+        right: 100%;
         width: 100%;
     }
 
     .Ans {
         width: 170px;
         font-size: 90%;
+        left: 25%;
+        transform: translate(-50%,-50%);
     }
 
     .icon_x {
