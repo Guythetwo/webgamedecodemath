@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+#img_test {
+    position: relative;
+    top: -20px;
+    width: 30%;
+    height: 30%;
+}
+
+.buttonnext {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 150%;
+    width: 20%;
+    text-align: center;
+    background-color: transparent;
+    border: 5px solid #4CFFF6;
+    color: #ffffff;
+    border-radius: 2%;
+    transition-duration: 500ms;
+    display: inline;
+}
+
+.buttonnext:hover {
+    background-color: #4CFFF6;
+    box-shadow:
+        0 0 10px #4CFFF6,
+        0 0 21px #4CFFF6,
+        0 0 42px #4CFFF6,
+        0 0 82px #ffffff;
+    color: rgb(255, 255, 255);
+}
+
+.h1 {
+    text-align: left;
+    float: left;
+}
+
+.text {
+    position: relative;
+    top: -60px;
+    color: #4CFFF6;
+}
+
+.arrow {
+    position: relative;
+    left: 0px;
+    top: 45px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition-duration: 500ms;
+    float: left;
+}
+
+.buttonnext:hover .arrow {
+    left: 7.5%;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.buttonnext:active {
+    background-color: transparent;
+    box-shadow: transparent;
+}
+
+.header {
+    text-align: center;
+
+    &::after {
+        content: 'ขั้นตอนการเล่น';
+        font-size: 150%;
+        color: #ffffff;
+        text-shadow:
+            0 0 10px #4CFFF6,
+            0 0 21px #4CFFF6,
+            0 0 42px #ffffff;
+    }
+}
+
+@media (max-width: 1700px) {
+    #img_test {
+        position: relative;
+        width: 40%;
+        height: 30%;
+    }
+
+    .text {
+        font-size: 200%;
+        top: -30px;
+        color: #4CFFF6;
+    }
+
+    .buttonnext {
+        font-size: 150%;
+        width: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    #img_test {
+        position: relative;
+        width: 60%;
+    }
+
+    .text {
+        font-size: 200%;
+        top: 20px;
+        color: #4CFFF6;
+    }
+    .buttonnext {
+        font-size: 150%;
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #img_test {
+        position: relative;
+        width: 70%;
+        height: 70%;
+    }
+
+    .text {
+        font-size: 150%;
+        top: 50px;
+        color: #4CFFF6;
+    }
+
+    .buttonnext {
+        font-size: 150%;
+        width: 60%;
+    }
+}

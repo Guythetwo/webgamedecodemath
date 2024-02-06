@@ -2,10 +2,10 @@
     position: relative;
     width: 100px;
     height: 50px;
-    background-color: #D15BFC;
+    background-color: rgb(0, 0, 0);
     box-shadow:
-        0 0 10px #D15BFC,
-        0 0 21px #ffffff;
+        0 0 10px #ffffff,
+        0 0 21px #D15BFC;
     transition-duration: 500ms;
 }
 
@@ -70,7 +70,32 @@
     }
 }
 
+@media (max-width: 1700px) {
+    .packA {
+        position: relative;
+        left: 10%;
+        top: 300px;
+    }
+
+    .button {
+        position: relative;
+        left: 780%;
+        top: 300px;
+    }
+}
+
 @media (max-width: 900px) {
+    .a {
+        position: relative;
+        width: 90px;
+        height: 40px;
+        background-color: #ffffff;
+        box-shadow:
+            0 0 10px #D15BFC,
+            0 0 21px #ffffff;
+        transition-duration: 500ms;
+    }
+
     .button {
         display: none;
     }
@@ -81,7 +106,7 @@
     }
 
     #filp1 {
-        top: -150px;
+        top: -120px;
         left: 32%;
     }
 
@@ -91,7 +116,7 @@
     }
 
     #filp3 {
-        top: 340px;
+        top: 300px;
         left: 32%;
     }
 

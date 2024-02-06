@@ -1,6 +1,8 @@
 body {
     background-color: rgb(0, 0, 0);
     overflow: hidden;
+    align-items: center;
+    text-align: center;
 }
 
 .truemain {
@@ -89,7 +91,7 @@ body {
 .score {
     position: absolute;
     top: 90%;
-    right: 1%;
+    left: 1%;
     font-size: 45px;
     text-align: center;
     width: 5%;
@@ -220,7 +222,27 @@ body {
     display: none;
 }
 
-@media (max-width: 1300px) {
+.main_helper {
+    position: fixed;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.helper {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #4CFFF6;
+    font-size: 15px;
+}
+
+.some_helper {
+    color: #D15BFC;
+    cursor: pointer
+}
+
+@media (max-width: 1600px) {
     .main {
         width: 200%;
         top: 15px;
@@ -230,11 +252,13 @@ body {
     .Ans {
         width: 100%;
         margin: 5px;
+        left: -75%;
+        transform: translate(-50%,-50%);
         font-size: 100%;
     }
 
     .Ans_main {
-        top: 80%;
+        top: 85%;
         left: 75%;
         width: 20%;
         transform: translate(-50%, -50%);
@@ -294,6 +318,11 @@ body {
         top: 35px;
         border-width: 0 8px 8px 0;
     }
+
+    .img {
+        top: 40%;
+        left: 50%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -344,7 +373,7 @@ body {
     }
 
     .button_start {
-        top: 70%;
+        top: 80%;
         width: 80%;
     }
 

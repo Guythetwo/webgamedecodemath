@@ -1,6 +1,7 @@
 .switch {
     position: absolute;
     top: 95%;
+    right: 1%;
     display: inline;
     width: 60px;
     height: 34px;
