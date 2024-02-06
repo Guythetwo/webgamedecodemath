@@ -1,5 +1,6 @@
 const img = document.getElementById('img_test')
 const text = document.getElementById('text')
+var h = document.documentElement.clientWidth
 x = ["a1.png","a2.png","a3.png","a4.png"]
 t = ["1.แก้โจทย์ปัญหาที่ให้มา","2.คลิกที่ปุ่มบริเวณมุมขวาล่างแล้วใส่คำตอบที่คิดจากโจทย์","3.คลิกปุ่ม FLIP เพื่อกลับหัวคำตอบแล้วแปลงเป็นคำศัพท์อังกฤษ",""]
 get = 0
@@ -20,4 +21,8 @@ function cilcknext() {
     }
     img.src = 'img/' + x[get]
     text.innerHTML = t[get]
+    if (h < 800 && get == 2) {
+        img.src = 'img/Pa3.png'
+        text.innerHTML = "3.กลับหัวโทรศัพท์แล้วแปลงตัวเลขเป็นคำศัพท์อังกฤษ"
+      }
 }
