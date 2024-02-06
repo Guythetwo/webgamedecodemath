@@ -398,3 +398,9 @@ body {
         border-width: 0 8px 8px 0;
     }
 }
+
+@media (max-height: 750px) {
+    .Ans_main {
+        top: 85%;
+    }
+}
